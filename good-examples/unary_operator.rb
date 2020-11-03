@@ -11,6 +11,9 @@ class UnaryOperator
     def -@
         text.downcase
     end
+    def !@
+        text.reverse
+    end
     ##all the object will be in string 
     def to_s
         text
@@ -22,3 +25,4 @@ unary = UnaryOperator.new("Lets Test it.")
 puts unary
 puts +unary
 puts -unary
+puts !unary
